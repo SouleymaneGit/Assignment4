@@ -5,6 +5,27 @@
     <title>Find radius of sphere</title>
 </head>
 <body>
-    <h6>Enter </h6>
+    <h1>Sphere volume calculator</h1>
+    <form>
+       enter the radius: <input type="text" id="radius">
+       <input type="button" onclick="multiplyBy()" value="Get volume"/>
+        
+    </form>
+
+    
+    
+    
+    <script>
+        function multiplyBy(){
+            let pie = Math.PI;;
+            value = document.getElementById("radius").value;
+            result  = (4.0/3.0)*pie*(value*value*value);
+
+              
+            n = result.toFixed(2);
+            window.alert("volume rounded for 2 decimal places =" +n);
+        }
+    
+    </script>
 </body>
 </html>
