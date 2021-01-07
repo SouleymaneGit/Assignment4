@@ -1,0 +1,73 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    
+   <script src = "Script.js">
+    
+    
+function Alert(e){
+ window.alert("Hey, I told you not to hover over me");
+};
+
+function imRight() {
+     document.querySelector("p").innerHTML = "Im Right"
+}
+
+function noImRight() {
+     document.querySelector("p").innerHTML = "No, Im Right"
+}
+  
+     function multiplyBy(){
+            let pie = Math.PI;;
+            value = document.getElementById("radius").value;
+            result  = (4.0/3.0)*pie*(value*value*value);
+
+              
+            n = result.toFixed(2);
+            window.alert("volume rounded for 2 decimal places =" +n);
+        }
+     
+  </script>
+ <!-- Part 1 of the Assignment TwoButtons-->
+ <button type = "button" id = "button1" onclick = "imRight()" > Click Me! </button>
+ <button type = "button" id = "button2" onclick = "noImRight()" > No, Click Me! </button> 
+  
+  <p> </p>
+ 
+ <!-- Part 2 of the Assignment Hover -->
+<div onmouseover="Alert(event)">
+<h1 class = "center">Don't hover over me</h1>
+</div>
+  
+<!-- Part 3 of the Assignment Password,Email, User -->
+
+  <h1 id="form_title"> This Part is For the Form</h1>
+<form action="" method="POST">
+    <label for="userName"> User Name</label>
+    <input type="text" name="userName" id="userName">
+    <label for="password"> Password</label>
+    <input type="password" name="password" id="password">
+    <button type="button" id="submit" onclick="tobeExecuted()"> Submit</button> 
+</form> 
+  
+  <!-- Bonus -->
+  <h1 class="center">Sphere volume calculator</h1>
+    <form class = "center">
+       enter the radius: <input type="text" id="radius">
+       
+       <input class="button" type="button" onclick="multiplyBy()" value="Get volume"/>
+       
+        
+    </form>
+  
+  
+
+</body>
+</html>
